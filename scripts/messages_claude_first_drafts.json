@@ -1,0 +1,116 @@
+{
+  "csm": [
+    {
+      "id": "C2018",
+      "subject": "Your Razorpay renewal: a review before you decide",
+      "body": "Hi [contact name], your Razorpay contract for Banyan Enterprises renews in 28 days, and I understand you're comparing a few providers. Before you decide, I'd like to set up a review with your account manager to go through your current rate card, volume tiers and renewal terms, so you can compare on full information. Could you reply with a time that suits you this week or next?\n\n[Your name], Customer Success, Razorpay",
+      "check": "Confirm the account manager can join before the renewal date. Do not offer or hint at a discount: pricing changes are the account manager's decision (PB-3)."
+    },
+    {
+      "id": "C2022",
+      "subject": "Before your renewal in 18 days",
+      "body": "Hi [contact name], your Razorpay contract for Panchi Furnishings renews in 18 days. I understand you're exploring your options, which makes sense before a renewal. I'd like to help you make that call with the full picture: your account manager can walk you through your current rate card, volume tiers and renewal terms. Could you reply with a time for a short call?\n\n[Your name], Customer Success, Razorpay",
+      "check": "Renewal is close: book the account manager first. No discount or rate promises (PB-3)."
+    },
+    {
+      "id": "C2036",
+      "subject": "Your renewal in 28 days",
+      "body": "Hi [contact name], Orchid Pharma's Razorpay contract renews in 28 days, and I understand you're exploring your options. You use 4 Razorpay products today, and I'd like to make sure your renewal reflects how you actually use them. Your account manager can go through your current rate card, volume tiers and renewal terms with you. Could you reply with a good time for a short call?\n\n[Your name], Customer Success, Razorpay",
+      "check": "Check the 4 products are still active before mentioning them. No discount or rate promises (PB-3)."
+    },
+    {
+      "id": "C2092",
+      "subject": "The rate card you asked for",
+      "body": "Hi [contact name], thank you for asking for the rate card ahead of your renewal, which is due in 13 days. Your account manager will share it and can walk you through your volume tiers and renewal terms on a short call, so nothing is unclear before you renew. Could you reply with a time that works for you?\n\n[Your name], Customer Success, Razorpay",
+      "check": "Confirm the account manager has the current rate card ready to send. Renewal is the closest in the list (13 days)."
+    },
+    {
+      "id": "C2040",
+      "subject": "Before your renewal: let's compare properly",
+      "body": "Hi [contact name], Green Leaf Fashions has been with Razorpay for 56 months, and your contract renews in 26 days. I understand you've seen a lower MDR offer from another provider. Before you decide, your account manager can go through your current rate card, volume tiers and renewal terms with you, so you can compare on full information. Could you reply with a good time for a call?\n\n[Your name], Customer Success, Razorpay",
+      "check": "Do not promise to match the other provider's MDR. Any pricing change is the account manager's decision (PB-3)."
+    },
+    {
+      "id": "C2004",
+      "subject": "Your renewal: a review with our leadership team",
+      "body": "Hi [contact name], Dhruva Enterprises' Razorpay contract renews in 39 days, and I understand you're comparing quotes from other providers. Given the scale of your business with us, I'd like to set up a review with your account manager and [senior leader name] to go through your rate card, volume tiers and renewal terms, and anything else you need from us. Could you share a few times that work for you over the next two weeks?\n\n[Your name], Customer Success, Razorpay",
+      "check": "Enterprise account: confirm a senior leader can join before sending. No discount or rate promises (PB-3)."
+    },
+    {
+      "id": "C2088",
+      "subject": "Your payment success rate: a joint review with our payments team",
+      "body": "Hi [contact name], your payment success rate with Razorpay fell to 85.6% over the last three months, from 93.4% in the three months before, and you also have 2 support tickets still open. Failed payments cost you sales, and we take that seriously. I'd like to set up a joint call with our Payments Ops team to review the failures by payment method and bank, and we will share a fix plan within 3 days of that call. I'll also follow up personally on your open tickets. Could you reply with a time that works?\n\n[Your name], Customer Success, Razorpay",
+      "check": "Pull the failure breakdown by payment method and bank before the call. Enterprise account: consider a senior sponsor joining. Check the 2 open tickets' status first."
+    },
+    {
+      "id": "C2090",
+      "subject": "Making sure we're talking to the right person",
+      "body": "Hi [contact name], we've tried to reach you a couple of times recently and want to make sure we're talking to the right person at Quest Studio. Could you confirm the best contact for your Razorpay account? Once we're connected, we'd be glad to run a short session on the dashboard reports and other Razorpay products that could help your team.\n\n[Executive sponsor name], Razorpay",
+      "check": "Send from the executive sponsor (PB-4). Check the registered email and phone are current, and try a phone call as well."
+    },
+    {
+      "id": "C2079",
+      "subject": "Your 5 open support tickets: I'm taking ownership",
+      "body": "Hi [contact name], you've raised 8 support tickets with us in the last 90 days, and 5 are still open. Your last support rating told us we've let you down, and I'm sorry. From today I'm your single point of contact for every open ticket, and a senior member of our team will call you within 48 hours. On that call we'll go through each ticket and I'll confirm a closure date for each one.\n\n[Your name], Customer Success, Razorpay",
+      "check": "Check the current status of all 5 tickets first. Book the senior callback before sending, so the 48-hour commitment is real (PB-2)."
+    },
+    {
+      "id": "C2027",
+      "subject": "Your open support tickets",
+      "body": "Hi [contact name], Nest Exports has been with Razorpay for 58 months, and over the last 90 days you've raised 8 support tickets, 4 of which are still open. That's not the experience you should have, and I'm sorry. I'm taking ownership of all 4 as your single point of contact, and a senior member of our team will call you within 48 hours to go through them and confirm a closure date for each.\n\n[Your name], Customer Success, Razorpay",
+      "check": "Check the 4 open tickets' status first. Book the senior callback before sending (PB-2)."
+    },
+    {
+      "id": "C2097",
+      "subject": "Reconnecting with Willow Furnishings",
+      "body": "Hi [contact name], I'm reaching out to reconnect with the team at Willow Furnishings. We'd like to make sure we have the right contact for your Razorpay account, so could you confirm who looks after payments on your side? We'd also be glad to run a short session on dashboard reports and the other Razorpay products that might be useful to you.\n\n[Executive sponsor name], Razorpay",
+      "check": "No account manager note on file: ask the account manager whether anything changed at the merchant (new owner or manager). Send from the executive sponsor (PB-4)."
+    },
+    {
+      "id": "C2062",
+      "subject": "Your open settlement tickets",
+      "body": "Hi [contact name], you've raised 5 support tickets with us in the last 90 days, including several about settlements, and none of them is closed yet. I'm sorry: settlement delays affect your cash flow directly, and you should have had answers by now. I'm now your single point of contact for all 5, and a senior member of our team will call you within 48 hours to go through each one and confirm a closure date.\n\n[Your name], Customer Success, Razorpay",
+      "check": "Check each settlement's actual status with Payments Ops before sending. Never give a settlement date the data doesn't support (PB-2)."
+    },
+    {
+      "id": "C2093",
+      "subject": "Your open support tickets",
+      "body": "Hi [contact name], over the last 90 days you've raised 8 support tickets with us and 4 are still open, and your last support rating tells us we haven't got this right. I'm sorry. I'm now your single point of contact for the open tickets, and a senior member of our team will call you within 48 hours to go through each one and confirm a closure date.\n\n[Your name], Customer Success, Razorpay",
+      "check": "Renewal is in 55 days: fix the tickets first and raise the renewal only once they are resolved. Book the senior callback before sending (PB-2)."
+    },
+    {
+      "id": "C2100",
+      "subject": "Your payment success rate: let's fix it together",
+      "body": "Hi [contact name], your payment success rate with Razorpay fell to 87.5% over the last three months, from 96.8% in the three months before. That means more of your customers' payments are failing, and we want to fix it. I'd like to set up a joint call with our Payments Ops team to review the failures by payment method and bank; we'll share a fix plan within 3 days of the call. I'll also check on your 1 open support ticket. Could you reply with a time that suits you?\n\n[Your name], Customer Success, Razorpay",
+      "check": "Pull the failure breakdown by payment method and bank before the call (PB-1)."
+    },
+    {
+      "id": "C2061",
+      "subject": "The success-rate review you asked for",
+      "body": "Hi [contact name], you asked us for a review of your success rates and didn't get a clear answer, and I'm sorry for that. Your payment success rate fell to 81.5% over the last three months, from 94.9% before, so you were right to raise it. I'd like to set up that review now: a joint call with our Payments Ops team to go through the failures by payment method and bank, with a fix plan shared within 3 days of the call. Could you reply with a time this week?\n\n[Your name], Customer Success, Razorpay",
+      "check": "Find out why the earlier request went unanswered before sending. Pull the failure breakdown by payment method and bank (PB-1)."
+    }
+  ],
+  "templates": [
+    {
+      "driver": "Performance",
+      "text": "Hi [contact name], your payment success rate on Razorpay was {success % m4-m6}% over the last three months, down from {success % m1-m3}% in the three months before. We'd like to help fix this. Reply to this email and our payments team will review failures by payment method and bank with you, then share a fix plan within 3 days of that review. (If the flag came from a note only: 'you recently told us about payment failures'.)",
+      "notes": "PB-1, light version. The 3-day fix plan is the playbook's own commitment."
+    },
+    {
+      "driver": "Service",
+      "text": "Hi [contact name], you have {unresolved} support tickets still open with us. I'm sorry this has taken longer than it should. I'm now your single point of contact. Reply with a good time to talk and I'll go through each open issue with you and confirm where it stands. (If the flag came from a note only: 'you told us our support has been slow'.)",
+      "notes": "PB-2, light version. No dates: the CSM confirms real ticket status first. Weakest fit for light-touch; escalate quickly."
+    },
+    {
+      "driver": "Pricing",
+      "text": "Hi [contact name], your Razorpay contract is due for renewal in {days to renewal} days. Before then, your account manager can walk you through your current rate card, volume tiers and renewal terms. Reply to this email to set up a time.",
+      "notes": "PB-3, light version. Never mention discounts or matching a competitor."
+    },
+    {
+      "driver": "Disengagement",
+      "text": "Hi [contact name], we want to make sure we're in touch with the right person at {business name} for your Razorpay account. Could you reply with the best contact for payments and reporting? We'd also be glad to run a short session on the reports and products on your account.",
+      "notes": "PB-4, light version. Email and phone, not the dashboard: these merchants rarely log in."
+    }
+  ]
+}

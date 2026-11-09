@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChurnDash · student build-a-thon prototype</title>
+<meta name="description" content="ChurnDash: a student prototype that flags merchants at risk of churn, explains why, ranks who a CSM should call first, and drafts fact-checked outreach a person approves. Not a Razorpay product.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=TASA+Orbiter:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #305EFF; --blue-ink: #2341C8; --navy: #192839; --muted: #5D6D86; --line: #DFE3E9;
+    --soft: #F4F7FB; --bg: #FFFFFF; --amber-bg: #FFF4DE; --amber: #8A5A00; --green-bg: #E6F5EE; --green: #00704A;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--navy); font: 16px/1.55 Inter, system-ui, sans-serif; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3, .brand { font-family: 'TASA Orbiter', Inter, sans-serif; letter-spacing: -0.01em; }
+
+  header { border-bottom: 1px solid var(--line); }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 16px 0; }
+  .brand { font-size: 1.2rem; font-weight: 600; }
+  .brand b { color: var(--blue); font-weight: 600; }
+  .brand span { font-family: Inter, sans-serif; font-weight: 500; font-size: .9rem; color: var(--muted); }
+  .proto { font-size: .78rem; color: var(--amber); background: var(--amber-bg); border: 1px solid #F3DDB0; border-radius: 999px; padding: 4px 12px; }
+
+  .hero { padding: 56px 0 28px; }
+  .eyebrow { font-size: .78rem; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+  h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.12; color: var(--blue); margin: 10px 0 14px; font-weight: 600; }
+  .lead { font-size: 1.12rem; color: var(--muted); max-width: 44rem; margin: 0; }
+
+  .cta { margin: 28px 0 8px; padding: 22px 24px; border: 1px solid #C9D6FF; border-radius: 18px;
+         background: linear-gradient(135deg, #EEF3FF 0%, #F7F9FF 100%); }
+  .cta .k { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); }
+  .cta h2 { margin: 4px 0 4px; font-size: 1.45rem; font-weight: 600; }
+  .cta p { margin: 0 0 16px; color: var(--muted); }
+  .btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 10px; font-weight: 600;
+         text-decoration: none; border: 1px solid var(--line); background: #fff; color: var(--navy);
+         transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease; }
+  .btn:hover { border-color: #C9D3F5; box-shadow: 0 6px 20px rgba(25,40,57,.08); transform: translateY(-1px); }
+  .btn.primary { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .btn.primary:hover { box-shadow: 0 6px 18px rgba(48,94,255,.3); }
+  .btn:focus-visible { outline: 3px solid rgba(48,94,255,.35); outline-offset: 2px; }
+  .btn svg { width: 18px; height: 18px; }
+
+  section { padding: 34px 0; }
+  h2.s { font-size: 1.5rem; font-weight: 600; margin: 0 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 18px; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+  .stat { border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .stat .v { font-family: 'TASA Orbiter', Inter, sans-serif; font-size: 1.9rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat .l { color: var(--muted); font-size: .9rem; }
+  .stat.ok { background: var(--green-bg); border-color: #BFE6D3; }
+  .stat.ok .v { color: var(--green); }
+
+  .steps { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+  .step { border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; background: #fff;
+          transition: box-shadow .2s ease, border-color .2s ease; }
+  .step:hover { box-shadow: 0 6px 24px rgba(25,40,57,.07); border-color: #C9D3F5; }
+  .step .n { display: inline-flex; width: 26px; height: 26px; border-radius: 50%; align-items: center; justify-content: center;
+             background: var(--soft); color: var(--blue); font-weight: 700; font-size: .85rem; margin-right: 8px; }
+  .step b { font-weight: 600; }
+  .step p { margin: 8px 0 0; color: var(--muted); font-size: .92rem; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+  .card { border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+  .card h3 { margin: 0; font-size: 1.05rem; font-weight: 600; }
+  .card p { margin: 0; color: var(--muted); font-size: .93rem; flex: 1; }
+  .card .btn { align-self: flex-start; padding: 9px 16px; font-size: .92rem; }
+
+  .guard { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; list-style: none; padding: 0; margin: 0; }
+  .guard li { background: var(--soft); border-radius: 12px; padding: 14px 16px; font-size: .93rem; }
+  .guard b { display: block; margin-bottom: 2px; }
+
+  footer { border-top: 1px solid var(--line); margin-top: 24px; padding: 20px 0 40px; color: var(--muted); font-size: .84rem; }
+
+  @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .hero, .cta, section { animation: rise .45s cubic-bezier(.2,.7,.2,1) both; }
+  .cta { animation-delay: .06s; } section:nth-of-type(1) { animation-delay: .1s; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+  @media (max-width: 560px) {
+    .wrap { padding: 0 16px; } .hero { padding-top: 36px; } .cta { padding: 18px; } .btn { width: 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <div class="brand">Churn<b>Dash</b> <span>· merchant churn early-warning</span></div>
+    <div class="proto">Student build-a-thon prototype · not a Razorpay product</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Razorpay Campus AI Build-a-thon · Problem 2 · student entry</div>
+    <h1>Who to call first, and why</h1>
+    <p class="lead">ChurnDash flags merchants at risk of moving their volume away, names the likely reason in plain words,
+      ranks who a customer success manager should contact this month (cap: 15), and drafts outreach that is fact-checked
+      and approved by a person. Nothing is ever sent from it.</p>
+
+    <div class="cta">
+      <div class="k">Try it live</div>
+      <h2>Run the rules on a merchant file</h2>
+      <p>Upload, tag notes, see the ranked list, then open a merchant for its evidence, draft and approval. About two minutes. Synthetic data only.</p>
+      <div class="btns">
+        <a class="btn primary" id="app-link" href="https://churndash.streamlit.app" target="_blank" rel="noopener">
+          Open the live app
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
+        <a class="btn" href="#downloads">Download the submission</a>
+      </div>
+    </div>
+  </div>
+
+  <section aria-labelledby="results">
+    <h2 class="s" id="results">This month's result on the Data Pack</h2>
+    <p class="sub">100 synthetic merchants, 6 months of data each, and my own deterministic rules.</p>
+    <div class="stats">
+      <div class="stat"><div class="v">24</div><div class="l">merchants flagged</div></div>
+      <div class="stat"><div class="v">15</div><div class="l">for CSM outreach (5 urgent renewals)</div></div>
+      <div class="stat"><div class="v">9</div><div class="l">light-touch, templated email</div></div>
+      <div class="stat"><div class="v">92%</div><div class="l">of value at stake on the CSM list (Rs 83.0 of 89.7 lakh)</div></div>
+      <div class="stat ok"><div class="v">100/100</div><div class="l">ranks match the submitted workbook</div></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="how">
+    <h2 class="s" id="how">How it works</h2>
+    <p class="sub">Rules decide who is at risk and why. AI only writes text and suggests tags, and a person confirms every step.</p>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><b>Upload</b><p>Checks the sheet, columns and types, and rejects a wrong file with a clear reason.</p></div>
+      <div class="step"><span class="n">2</span><b>Tag notes</b><p>Each account manager note becomes a tag the rules can use. AI suggests tags for new wording, and a person confirms them.</p></div>
+      <div class="step"><span class="n">3</span><b>Score and rank</b><p>The same rules as the Excel workbook: four driver flags, a TPV alarm, value at stake and renewal urgency.</p></div>
+      <div class="step"><span class="n">4</span><b>Ranked list</b><p>All merchants, with the CSM 15 and the light-touch list highlighted.</p></div>
+      <div class="step"><span class="n">5</span><b>Merchant page</b><p>The reason, the evidence from 5 sources, the priority maths and the playbook.</p></div>
+      <div class="step"><span class="n">6</span><b>Draft</b><p>A stored draft, a DeepSeek email and WhatsApp message written from that merchant's row only, or a rules template.</p></div>
+      <div class="step"><span class="n">7</span><b>Fact check</b><p>Every number must come from the merchant's row; no promises, discounts or other merchants' names. Failed drafts are blocked.</p></div>
+      <div class="step"><span class="n">8</span><b>Approve</b><p>A CSM edits and approves. WhatsApp only with an opt-in. Nothing is sent, ever.</p></div>
+    </div>
+  </section>
+
+  <section id="downloads" aria-labelledby="dl">
+    <h2 class="s" id="dl">Download the submission</h2>
+    <p class="sub">The workbook is the source of truth; the app runs the same rules.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Scoring workbook (.xlsx)</h3>
+        <p>Live Excel formulas, editable Settings, the CSM 15, the light-touch list, the drafts and the test against my hand labels.</p>
+        <a class="btn" href="downloads/P2_Churn_Scoring.xlsx" download>Download workbook</a>
+      </div>
+      <div class="card">
+        <h3>Written answers (PDF)</h3>
+        <p>The 11 written answers, including how the rules were tested and where they fail.</p>
+        <a class="btn" href="downloads/P2_Written_Answers.pdf" download>Download written answers</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="guard">
+    <h2 class="s" id="guard">Guardrails</h2>
+    <ul class="guard">
+      <li><b>Rules rank, not AI</b>Flags, scores and the order come from deterministic rules that match the workbook exactly.</li>
+      <li><b>A person confirms</b>Every AI tag suggestion and every message waits for a person.</li>
+      <li><b>Nothing is sent</b>Approving records the decision; the CSM sends from their own tools.</li>
+      <li><b>Synthetic data only</b>Never upload real merchant data. Uploads stay in memory for the session.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    ChurnDash is a student prototype built for the Razorpay Campus AI Build-a-thon (Problem 2). It is not a Razorpay
+    product and isn't endorsed by Razorpay. Claude (AI) wrote the code; DeepSeek writes the AI drafts. All data is the
+    build-a-thon's synthetic Data Pack.
+  </div>
+</footer>
+</body>
+</html>

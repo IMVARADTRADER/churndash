@@ -1,0 +1,34 @@
+# Look: Razorpay's website as checked on 9 Nov 2026 (blue #305EFF, navy text, pale blue-grey surfaces,
+# TASA Orbiter headings, Inter body). No Razorpay logo or marks.
+[theme]
+base = "light"
+primaryColor = "#305EFF"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F7FB"
+textColor = "#192839"
+linkColor = "#2950DA"
+linkUnderline = false
+borderColor = "#DFE3E9"
+dataframeBorderColor = "#E8ECF1"
+dataframeHeaderBackgroundColor = "#F4F7FB"
+showWidgetBorder = true
+baseRadius = "0.6rem"
+buttonRadius = "0.5rem"
+baseFontSize = 15
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "TASA Orbiter:https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@500;600;700&display=swap"
+headingFontWeights = [600, 600, 600, 500, 500, 500]
+redColor = "#D52B1E"
+greenColor = "#00895A"
+blueColor = "#305EFF"
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = "none"
+
+[server]
+maxUploadSize = 5
+headless = true
+
+[browser]
+gatherUsageStats = false

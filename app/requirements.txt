@@ -1,0 +1,5 @@
+# Tested versions (Python 3.14 locally; pandas 3 needs Python 3.11 or newer on the host)
+streamlit==1.62.0
+pandas==3.0.2
+openpyxl==3.1.5
+altair==6.2.2

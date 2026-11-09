@@ -1,0 +1,92 @@
+{
+ "C2018": {
+  "status": "Passed",
+  "numbers": "28 = days to renewal",
+  "words": 73,
+  "driver": "Pricing"
+ },
+ "C2022": {
+  "status": "Passed",
+  "numbers": "18 = days to renewal",
+  "words": 68,
+  "driver": "Pricing"
+ },
+ "C2036": {
+  "status": "Passed",
+  "numbers": "28 = days to renewal / tenure (months); 4 = products used",
+  "words": 71,
+  "driver": "Pricing"
+ },
+ "C2092": {
+  "status": "Passed",
+  "numbers": "13 = days to renewal / logins (30 days)",
+  "words": 64,
+  "driver": "Pricing"
+ },
+ "C2040": {
+  "status": "Passed",
+  "numbers": "56 = tenure (months); 26 = days to renewal",
+  "words": 73,
+  "driver": "Pricing"
+ },
+ "C2004": {
+  "status": "Passed",
+  "numbers": "39 = days to renewal",
+  "words": 81,
+  "driver": "Pricing"
+ },
+ "C2088": {
+  "status": "Passed",
+  "numbers": "85.6 = success rate m4-m6; 93.4 = success rate m1-m3; 2 = tickets in 90 days / unresolved tickets / last CSAT / products used; 3 = PB-1 fix plan within 3 days",
+  "words": 100,
+  "driver": "Performance"
+ },
+ "C2090": {
+  "status": "Passed",
+  "numbers": "none",
+  "words": 65,
+  "driver": "Disengagement"
+ },
+ "C2079": {
+  "status": "Passed",
+  "numbers": "5 = unresolved tickets; 8 = tickets in 90 days; 90 = ticket window (90 days); 48 = PB-2 senior callback within 48 hours",
+  "words": 80,
+  "driver": "Service"
+ },
+ "C2027": {
+  "status": "Passed",
+  "numbers": "58 = tenure (months); 90 = ticket window (90 days); 8 = tickets in 90 days; 4 = unresolved tickets; 48 = PB-2 senior callback within 48 hours",
+  "words": 80,
+  "driver": "Service"
+ },
+ "C2097": {
+  "status": "Passed",
+  "numbers": "none",
+  "words": 66,
+  "driver": "Disengagement"
+ },
+ "C2062": {
+  "status": "Passed",
+  "numbers": "5 = tickets in 90 days / unresolved tickets / products used; 90 = ticket window (90 days); 48 = PB-2 senior callback within 48 hours",
+  "words": 85,
+  "driver": "Service"
+ },
+ "C2093": {
+  "status": "Passed",
+  "numbers": "90 = ticket window (90 days); 8 = tickets in 90 days / logins (30 days); 4 = unresolved tickets; 48 = PB-2 senior callback within 48 hours",
+  "words": 73,
+  "driver": "Service"
+ },
+ "C2100": {
+  "status": "Passed",
+  "numbers": "87.5 = success rate m4-m6; 96.8 = success rate m1-m3; 3 = PB-1 fix plan within 3 days; 1 = unresolved tickets",
+  "words": 95,
+  "driver": "Performance"
+ },
+ "C2061": {
+  "status": "Passed",
+  "numbers": "81.5 = success rate m4-m6; 94.9 = success rate m1-m3; 3 = PB-1 fix plan within 3 days",
+  "words": 96,
+  "driver": "Performance"
+ }
+}

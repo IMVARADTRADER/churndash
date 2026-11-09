@@ -1,0 +1,26 @@
+# ChurnDash repository: an allow-list. Everything in this folder is ignored unless named below,
+# so a new private file can't slip in by accident. Keep this repository PRIVATE: it holds Data Pack rows.
+
+/*
+
+# what the app and the landing page need
+!/.gitignore
+!/.vercelignore
+!/vercel.json
+!/app/
+!/scripts/
+!/site/
+!/P2_Churn_Scoring.xlsx
+!/Problem 2 Written Answers Razorpay Build-a-thon.pdf
+!/Problem Statement 2.xlsx
+
+# never, even inside the folders above
+.env
+**/.env
+backups/
+__pycache__/
+*.pyc
+app/.streamlit/secrets.toml
+app/demo_files/
+site/downloads/
+.vercel/

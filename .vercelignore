@@ -1,0 +1,7 @@
+# The landing page needs only these. Everything else (the .env file, the app, scripts, the Data Pack) stays local
+# if the Vercel CLI is ever run from this folder.
+/*
+!/site
+!/vercel.json
+!/P2_Churn_Scoring.xlsx
+!/Problem 2 Written Answers Razorpay Build-a-thon.pdf
